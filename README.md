@@ -17,7 +17,7 @@ Why `dbt`?
 ## This project
 
 - Uses `synthea` [data](https://synthetichealth.github.io/synthea/) to proxy real world EHR data.
-- The Python dependencies needed are [dbt](https://github.com/dbt-labs/dbt-core) and [dbt-duckdb](https://github.com/duckdb/dbt-duckdb) (`uv sync`)
+- The Python dependencies needed are [dbt](https://github.com/dbt-labs/dbt-core) and [dbt-duckdb](https://github.com/duckdb/dbt-duckdb)
 - Run `setup_data.py` to prepare the data yourself (`uv run setup_data.py`, `python -m setup_data`)
 
 | #  | Topic                                                                                             | Description                                                                                                                              |
