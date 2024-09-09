@@ -23,3 +23,10 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 
+models:
+  temp_dbt:
+    silver:
+      materialized: view
+    gold:
+      # this is redundant, and does not need to be set
+      +materialized: table

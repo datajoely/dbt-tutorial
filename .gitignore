@@ -1,6 +1,6 @@
 # Project specific
 uv.lock
-data/*
+data/
 
 # General
 .DS_Store
