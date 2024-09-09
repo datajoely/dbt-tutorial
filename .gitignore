@@ -3,6 +3,8 @@ uv.lock
 data/csv*
 data/synthea.duckdb
 __pycache__/
+logs/dbt.log
+
 
 # General
 .DS_Store
@@ -57,5 +59,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#macOS,Windows
-logs/dbt.log
 
