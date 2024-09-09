@@ -1,6 +1,7 @@
 # Project specific
 uv.lock
-data/
+data/csv*
+data/synthea.duckdb
 
 # General
 .DS_Store
