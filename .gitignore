@@ -2,6 +2,7 @@
 uv.lock
 data/csv*
 data/synthea.duckdb
+__pycache__/
 
 # General
 .DS_Store
