@@ -28,5 +28,4 @@ models:
     silver:
       materialized: view
     gold:
-      # this is redundant, and does not need to be set
       +materialized: table
