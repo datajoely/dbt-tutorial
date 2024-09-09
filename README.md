@@ -1,5 +1,7 @@
 # dbt demo project
 
+Simple project intended to show the key concepts of `dbt` and how it can accelerate teams.
+
 ## Tutorial topics
 
 Why `dbt`?
