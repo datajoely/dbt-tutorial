@@ -13,12 +13,13 @@ Why `dbt`?
 | **Testing**                 | "Expectation testing" front and centre.          |
 | **Development vs Production** | Simple separation between testing and production environments. |
 
-
 ## This project
+
+![dbt-project-dag](dag.png)
 
 - Uses `synthea` [data](https://synthetichealth.github.io/synthea/) to proxy real world EHR data.
 - The Python dependencies needed are [dbt](https://github.com/dbt-labs/dbt-core) and [dbt-duckdb](https://github.com/duckdb/dbt-duckdb)
-- Run `setup_data.py` to prepare the data yourself (`uv run setup_data.py`, `python -m setup_data`)
+- Run `setup_data.py` to prepare the data yourself (`uv run setup_data.py` OR `python -m setup_data`)
 
 | #  | Topic                                                                                             | Description                                                                                                                              |
 |----|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -30,3 +31,10 @@ Why `dbt`?
 | 6  | [Complex macros](https://docs.getdbt.com/docs/build/jinja-macros)                                                                             | Advanced macros provide additional functionality and power. Handle with care. Includes complex [tests](temp_dbt/models/gold/pivot_condition_encounters.sql) and transformations like [pivots](temp_dbt/models/gold/pivot_condition_encounters.sql). |
 
 This only scratches the surface of `dbt`, but should serve as a useful introduction.
+
+## Useful links
+
+- [Reusable packages](https://docs.getdbt.com/docs/build/packages) plus [1st party utilities](https://github.com/dbt-labs/dbt-utils).
+- `dbt init` [journey](https://docs.getdbt.com/reference/commands/init).
+- [Awesome dbt](https://github.com/Hiflylabs/awesome-dbt?tab=readme-ov-file) reference
+- [Introductory YouTube Tutorial](https://www.youtube.com/watch?v=toSAAgLUHuk&t=789s)
