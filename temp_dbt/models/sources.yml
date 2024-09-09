@@ -1,0 +1,11 @@
+version: 1
+
+sources: 
+  - name: 'raw'  # This is the missing name field, replace 'raw' with your actual source name
+    schema: 'main'   
+    tables:
+  
+      - name: CONDITIONS
+      - name: ENCOUNTERS
+      - name: MEDICATIONS
+      - name: PROCEDURES

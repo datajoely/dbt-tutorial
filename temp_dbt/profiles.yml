@@ -1,0 +1,16 @@
+synthea:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '../data/synthea.duckdb'
+      threads: 24
+
+    prod:
+      type: snowfalke
+      account: [account id] # Snowflake <account_name>
+      user: [username] # Snowflake username
+      role: [user role] # Snowflake user role
+
+      # SSO config
+      authenticator: externalbrowser
