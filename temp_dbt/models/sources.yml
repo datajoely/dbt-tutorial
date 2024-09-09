@@ -1,11 +1,36 @@
 version: 1
 
 sources: 
-  - name: 'raw'  # This is the missing name field, replace 'raw' with your actual source name
-    schema: 'main'   
+  - name: 'raw'
+    schema: 'main'
     tables:
-  
       - name: CONDITIONS
+        description: Diagnoses observed in patient population
+        columns:
+          - name: ENCOUNTER
+            description: Foreign key from ENCOUNTERS table
+            data_tests:
+              - not_null
+          - name: CODE
+            description: Condition code associated with ENCOUNTER
+            data_tests:
+              - not_null
+          - name: PATIENT
+            description: Foreign key from PATIENT table (not declared as a source)
+            data_tests:
+              - not_null
+          - name: START
+            description: Start of the condition
+          - name: STOP
+            description: End of the condition     
       - name: ENCOUNTERS
+        description: Event unique identifier which covers all related events (e.g. Procedures, Condition etc.) associated with a particular patient
+        columns:
+          - name: Id
+            data_tests:
+              - not_null
+              - unique
       - name: MEDICATIONS
+        description: Prescriptions assigned to a patient during a particular encounter.
       - name: PROCEDURES
+        description: Procedures performed on a patient during a particular encounter.

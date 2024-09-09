@@ -1,0 +1,11 @@
+models:
+  - name: pivot_condition_encounters
+    columns:
+      - name: date_year
+        data_tests:
+          - unique
+          - test_date_range:
+              column_name: date_year
+              start_date: '2010-01-01'
+              end_date: '2020-01-01'
+

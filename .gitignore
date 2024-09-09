@@ -57,3 +57,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#macOS,Windows
+logs/dbt.log
